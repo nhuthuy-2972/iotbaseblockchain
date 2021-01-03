@@ -94,7 +94,7 @@ export const TopBar = () => {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Admin UI
+            IOT-NETWORK-ADMIN
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}></div>

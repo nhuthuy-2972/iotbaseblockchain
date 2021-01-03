@@ -192,7 +192,12 @@ export default function DeviceDialog({
           <Button onClick={handleClose} variant="contained" color="secondary">
             Hủy bỏ
           </Button>
-          <Button onClick={handleActiveBT} variant="contained" color="primary">
+          <Button
+            disabled={deviceID === deviceIdIP ? false : true}
+            onClick={handleActiveBT}
+            variant="contained"
+            color="primary"
+          >
             Đồng Ý
           </Button>
         </DialogActions>

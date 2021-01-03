@@ -69,6 +69,7 @@ const useStyles = makeStyles({
 
 export default function StickyHeadTable() {
   const [data, setData] = React.useState([]);
+  const [backupdata, setBackup] = React.useState([]);
   const [searchKey, setSearchKey] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
@@ -101,6 +102,7 @@ export default function StickyHeadTable() {
         });
         console.log("snap shot");
         setData(devices);
+        setBackup(devices);
         setLoading(true);
       });
 
@@ -111,7 +113,7 @@ export default function StickyHeadTable() {
     console.log("SEARCHDEVICE");
     setLoading(false);
     const result = [];
-    const listdevice = data;
+    const listdevice = backupdata;
     for (let i in listdevice) {
       // const deviceID: any = listdevice[i].deviceID
       // console.log(deviceID)
@@ -129,7 +131,7 @@ export default function StickyHeadTable() {
     console.log("SEARCHDEVICE");
     setLoading(false);
     const result = [];
-    const listdevice = data;
+    const listdevice = backupdata;
     for (let i in listdevice) {
       // const deviceID: any = listdevice[i].deviceID
       // console.log(deviceID)
@@ -147,7 +149,7 @@ export default function StickyHeadTable() {
     console.log("SEARCHDEVICE");
     setLoading(false);
     const result = [];
-    const listdevice = data;
+    const listdevice = backupdata;
     for (let i in listdevice) {
       // const deviceID: any = listdevice[i].deviceID
       // console.log(deviceID)
@@ -175,6 +177,7 @@ export default function StickyHeadTable() {
           devices.push(device);
         });
         setData(devices);
+        setBackup(devices);
         setLoading(true);
       });
   };
@@ -234,7 +237,6 @@ export default function StickyHeadTable() {
         <Divider className={classes.divider} orientation="vertical" />
         <IconButton
           color="primary"
-          
           className={classes.iconButton}
           aria-label="directions"
           onClick={searchWaitActiveDevice}

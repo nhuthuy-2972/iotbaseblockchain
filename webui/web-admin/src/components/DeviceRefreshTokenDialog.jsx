@@ -112,7 +112,12 @@ export default function DeviceRefreshTokenDialog({
           <Button onClick={handleClose} variant="contained" color="secondary">
             Hủy bỏ
           </Button>
-          <Button onClick={handleActiveBT} variant="contained" color="primary">
+          <Button
+            disabled={deviceToken === "" ? true : false}
+            onClick={handleActiveBT}
+            variant="contained"
+            color="primary"
+          >
             Đồng Ý
           </Button>
         </DialogActions>
