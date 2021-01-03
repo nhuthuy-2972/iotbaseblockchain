@@ -434,7 +434,7 @@ const Row = ({ striped, row, dataf }: any) => {
         >
           {({ handleChange, values, isSubmitting }) => (
             <Form>
-              <ModalHeader>CHIA SẼ THIẾT BỊ</ModalHeader>
+              <ModalHeader>CẬP NHẬT CHIA SẺ</ModalHeader>
               <ModalBody>
                 <FormControl label="Thiết bị">
                   <Input
@@ -710,7 +710,7 @@ const Row = ({ striped, row, dataf }: any) => {
                     },
                   }}
                 >
-                  Thêm
+                  Đồng ý
                 </ModalButton>
               </ModalFooter>
             </Form>

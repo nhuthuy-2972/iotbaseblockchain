@@ -98,11 +98,11 @@ const Row = ({ striped, row, type }: any) => {
         >
           {row.actived === true ? (
             <Tag closeable={false} variant="outlined" kind={'positive'}>
-              {'Actived yet'}
+              {'Actived'}
             </Tag>
           ) : (
             <Tag closeable={false} variant="outlined" kind={'warning'}>
-              {'Not actived'}
+              {'Waiting'}
             </Tag>
           )}
         </div>
