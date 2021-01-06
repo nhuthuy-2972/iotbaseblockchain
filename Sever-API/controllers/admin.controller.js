@@ -135,11 +135,11 @@ module.exports.activedevice = async (req, res) => {
     } else {
       console.log(responsereader);
       console.log(responsewriter);
-      res.json({ success: false, message: "Failed register user" });
+      res.status(403).json({ success: false, message: "Failed register user" });
     }
   } catch (err) {
     console.error(err);
-    res.json({ success: false, message: err.message });
+    res.status(403).json({ success: false, message: err.message });
   }
 };
 

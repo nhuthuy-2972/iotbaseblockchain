@@ -37,7 +37,7 @@ export const ShareDeviceManager = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   const [device, setDevice] = React.useState({
     data_fields: [{ field_name: '', field_display: '', field_unit: '' }],
-    name: '',
+    device_name: '',
   })
   const checkemty = (s: any) => {
     for (const i of s) {
@@ -122,7 +122,7 @@ export const ShareDeviceManager = () => {
           marginBottom: theme.sizing.scale800,
         })}
       >
-        {`THIẾT BỊ ${device.name}(${id})`}
+        {`THIẾT BỊ ${device.device_name}(${id})`}
       </div>
       <div
         className={css({

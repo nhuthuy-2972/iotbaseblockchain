@@ -183,7 +183,7 @@ const StreamDevicesRef = ({ bcidentity, deviceinfo }: any) => {
         })}
       >
         <div className={css({ ...theme.typography.font550 })}>
-          {`${deviceinfo.name || 'X iot'} (${deviceinfo.desc || ''}) `}
+          {`${deviceinfo.device_name || 'X iot'}`}
           <BatteryCharging color={theme.colors.black} size={33} />
           {` ${data.battery} %`}
         </div>

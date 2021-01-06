@@ -34,7 +34,10 @@ const DevicesPageRef = () => {
             router.replace(`/devices/owner/${id}`)
           } else if (doc.exists) {
             console.log('yes!')
-            const info: any = { name: doc.data().name, desc: doc.data().desc }
+            const info: any = {
+              device_name: doc.data().device_name,
+              device_desc: doc.data().device_desc,
+            }
             setdeviceInfo(info)
             db.collection('bcAccounts')
               .where('auth', '==', state.user.uid)

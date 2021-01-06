@@ -5,14 +5,14 @@ import 'firebase/firestore'
 import { toaster } from 'baseui/toast'
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: 'AIzaSyDUnozcahXIVhLOFxSNsyzmiXUa6sefkTY',
-    authDomain: 'iotbaseonfabric.firebaseapp.com',
-    databaseURL: 'https://iotbaseonfabric.firebaseio.com',
-    projectId: 'iotbaseonfabric',
-    storageBucket: 'iotbaseonfabric.appspot.com',
-    messagingSenderId: '1028990275388',
-    appId: '1:1028990275388:web:cbaa82cb7e2df883559839',
-    measurementId: 'G-LSLQ1DZ5DB',
+    apiKey: 'AIzaSyCFoqpUGjvJIBYGC5pMa_SjFGpbe7_WHmg',
+    authDomain: 'luanvan-iot-final.firebaseapp.com',
+    databaseURL: 'https://luanvan-iot-final.firebaseio.com',
+    projectId: 'luanvan-iot-final',
+    storageBucket: 'luanvan-iot-final.appspot.com',
+    messagingSenderId: '976679303624',
+    appId: '1:976679303624:web:91bca95efe0bbbe446a8fd',
+    measurementId: 'G-2Q73T8TBYW',
   })
 }
 

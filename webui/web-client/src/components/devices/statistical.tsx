@@ -193,7 +193,6 @@ export const Statistical = ({ bcidentity }: any) => {
   //   getds()
   // }, [])
 
-  console.log('dume do k')
   console.log(bcidentity)
   return (
     <div className={css({})}>

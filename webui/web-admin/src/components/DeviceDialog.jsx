@@ -57,7 +57,7 @@ export default function DeviceDialog({
         },
       });
       const data = result.data;
-      if (data.status === true) {
+      if (data.success === true) {
         setOpen(false);
         snackbar.showMessage("success active device");
       } else {

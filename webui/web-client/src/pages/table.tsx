@@ -70,7 +70,7 @@ const Row = ({ striped, row, type }: any) => {
             whiteSpace: 'nowrap',
           })}
         >
-          {row.name}
+          {row.device_name}
         </div>
       </CenteredBodyCellLeft>
       <CenteredBodyCellLeft $striped={striped}>
@@ -83,7 +83,7 @@ const Row = ({ striped, row, type }: any) => {
             whiteSpace: 'nowrap',
           })}
         >
-          {row.desc}
+          {row.device_desc}
         </div>
       </CenteredBodyCellLeft>
       <CenteredBodyCellLeft $striped={striped}>
@@ -142,7 +142,7 @@ const Row = ({ striped, row, type }: any) => {
                   ? `/devices/owner/${row.deviceID}`
                   : `/devices/refer/${row.deviceID}`
               router.replace(path, {
-                device: { name: row.name },
+                device: { name: row.device_name },
               })
             }}
           >

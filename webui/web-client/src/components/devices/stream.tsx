@@ -163,7 +163,7 @@ const StreamDevices = ({ bcidentity }: any) => {
             ...theme.typography.font650,
           })}
         >
-          {`${device.name || 'X iot'}`}
+          {`${device.device_name || 'X iot'}`}
           {/* Batery :{' '}
           {data.history.slice(-1).pop() ? (
             <>

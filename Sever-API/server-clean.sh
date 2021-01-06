@@ -1,2 +1,2 @@
-rm .wallet
-rm config/connection-*
+rm -rf .wallet
+rm -rf config/connection-*

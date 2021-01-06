@@ -27,7 +27,7 @@ import { colors } from "@material-ui/core";
 const columns = [
   { id: "date", label: "Thời gian", minWidth: 60 },
   { id: "deviceID", label: "ID thiết bị", minWidth: 60 },
-  { id: "name", label: "Tên thiết bị", minWidth: 60 },
+  { id: "device_name", label: "Tên thiết bị", minWidth: 60 },
   {
     id: "email",
     label: "Chủ sở hữu",
@@ -35,7 +35,7 @@ const columns = [
     format: (value) => value.toLocaleString("en-US"),
   },
   {
-    id: "desc",
+    id: "device_desc",
     label: "Thông tin thiết bị",
     minWidth: 60,
     format: (value) => value.toLocaleString("en-US"),
@@ -72,21 +72,6 @@ export default function StickyHeadTable() {
   const [backupdata, setBackup] = React.useState([]);
   const [searchKey, setSearchKey] = React.useState("");
   const [loading, setLoading] = React.useState(false);
-
-  const getAllDevice = () => {
-    let devices = [];
-    return db.collection("devices").onSnapshot((snapShot) => {
-      snapShot.forEach(async (doc) => {
-        // console.log(doc.data())
-        let device = doc.data();
-        device.deviceID = doc.id;
-        devices.push(device);
-      });
-      console.log("snap shot");
-      setData(devices);
-      setLoading(true);
-    });
-  };
 
   React.useEffect(() => {
     const unsubscriber = db
@@ -296,16 +281,16 @@ export default function StickyHeadTable() {
                                 <DeviceDialog
                                   deviceID={row["deviceID"]}
                                   actived={row["actived"]}
-                                  name={row["name"]}
+                                  name={row["device_name"]}
                                   owner={row["auth"]}
-                                  info={row["desc"]}
+                                  info={row["device_desc"]}
                                 />
                               ) : (
                                 <DeviceDialog
                                   deviceID={row["deviceID"]}
                                   actived={row["actived"]}
                                   owner={row["auth"]}
-                                  name={row["name"]}
+                                  name={row["device_name"]}
                                   email={row["email"]}
                                 />
                               )}
@@ -320,7 +305,7 @@ export default function StickyHeadTable() {
                                 deviceID={row["deviceID"]}
                                 actived={row["actived"]}
                                 owner={row["auth"]}
-                                name={row["name"]}
+                                name={row["device_name"]}
                                 email={row["email"]}
                               />
                             </TableCell>

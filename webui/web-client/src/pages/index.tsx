@@ -168,7 +168,7 @@ const IndexPage = () => {
         for (let i in listdevice) {
           // const deviceID: any = listdevice[i].deviceID
           console.log(listdevice[i])
-          if (listdevice[i].name.includes(searchinput)) {
+          if (listdevice[i].device_name.includes(searchinput)) {
             console.log('co chua')
             result.push(listdevice[i])
           }
@@ -679,8 +679,8 @@ const IndexPage = () => {
         <Formik
           initialValues={{
             push_time: '',
-            name: '',
-            desc: '',
+            device_name: '',
+            device_desc: '',
             warning: false,
             phone_number: '',
             data_fields: [
@@ -799,11 +799,11 @@ const IndexPage = () => {
                 <FormControl label="Tên thiết bị *">
                   <Input
                     required
-                    name="name"
+                    name="device_name"
                     type="text"
                     onChange={handleChange}
                     placeholder="X Iot"
-                    value={values.name}
+                    value={values.device_name}
                     overrides={{
                       InputContainer: {
                         style: {
@@ -906,10 +906,10 @@ const IndexPage = () => {
                 <FormControl label="Miêu tả thêm *">
                   <Input
                     required
-                    name="desc"
+                    name="device_desc"
                     type="text"
                     onChange={handleChange}
-                    value={values.desc}
+                    value={values.device_desc}
                     overrides={{
                       InputContainer: {
                         style: {
