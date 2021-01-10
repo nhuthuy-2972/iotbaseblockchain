@@ -3,11 +3,10 @@ import { withStyle, useStyletron } from 'baseui'
 import { StyledTable, StyledHeadCell, StyledBodyCell } from 'baseui/table-grid'
 import { Tag } from 'baseui/tag'
 import { Button } from 'baseui/button'
-import { Activity, Share2 } from 'react-feather'
+import { Sliders, Share2, UserMinus } from 'react-feather'
 import { Paragraph2, Label2 } from 'baseui/typography'
 import { useHistory, useParams } from 'react-router-dom'
 import { FormControl } from 'baseui/form-control'
-import { PlusCircle, Plus, X, RotateCcw, Search } from 'react-feather'
 import { FieldArray, Form, Formik } from 'formik'
 import { Block } from 'baseui/block'
 import { Input } from 'baseui/input'
@@ -186,7 +185,7 @@ const Row = ({ striped, row, dataf }: any) => {
             size="compact"
             kind="secondary"
             startEnhancer={() => (
-              <Activity color={theme.colors.mono700} size={15} />
+              <UserMinus color={theme.colors.mono700} size={15} />
             )}
             overrides={{
               BaseButton: {
@@ -283,7 +282,7 @@ const Row = ({ striped, row, dataf }: any) => {
               setIsOpen(true)
             }}
             startEnhancer={() => (
-              <Share2 color={theme.colors.mono700} size={15} />
+              <Sliders color={theme.colors.mono700} size={15} />
             )}
             overrides={{
               BaseButton: {
@@ -393,7 +392,7 @@ const Row = ({ striped, row, dataf }: any) => {
               console.log('ket qua them may: ', result.data)
               toaster.positive(
                 <div className={css({ ...theme.typography.font200 })}>
-                  Thêm thiết bị thành công!
+                  Cập nhật thành công!
                 </div>,
                 {
                   autoHideDuration: 3000,
@@ -415,7 +414,7 @@ const Row = ({ striped, row, dataf }: any) => {
               actions.setSubmitting(false)
               toaster.negative(
                 <div className={css({ ...theme.typography.font200 })}>
-                  Xảy ra trong quá trình thêm dữ liệu. Vui lòng thử lại!
+                  Xảy ra lỗi trong quá trình cập nhật. Vui lòng thử lại!
                 </div>,
                 {
                   autoHideDuration: 3000,

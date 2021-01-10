@@ -78,7 +78,7 @@ export const LoginForm: React.FC<{}> = () => {
             transparent
           >
             <MDBNavbarBrand href="#">
-              <strong>Navbar</strong>
+              <img height="40" alt="logo" src="/2152488.ico" />
             </MDBNavbarBrand>
             {true && <MDBNavbarToggler onClick={onClick1} />}
             <MDBCollapse isOpen={collapse} navbar>
@@ -148,7 +148,9 @@ export const LoginForm: React.FC<{}> = () => {
                   component="h2"
                   // style={{ fontSize: "64px" }}
                 >
-                  {'NỀN TẢNG THEO DÕI & QUẢN LÝ THIẾT BỊ IOT'}
+                  {
+                    'NỀN TẢNG QUAN TRẮC MÔI TRƯỜNG NƯỚC DỰA TRÊN CÔNG NGHỆ BLOCKCHAIN'
+                  }
                 </Typography>
                 <Typography
                   variant="h5"
@@ -174,11 +176,10 @@ export const LoginForm: React.FC<{}> = () => {
                         Về nền tảng của chúng tôi
                       </Typography>
                       <Typography variant="subtitle1">
-                        GGGGGGGG là dịch vụ nền tảng cho phép bạn tổng hợp, trực
-                        quan hóa các luồng dữ liệu từ các thiết bị quan trắc
-                        trên Blockchain. Bạn có thể gửi dữ liệu thới Platform từ
-                        thiết bị của bạn, xem dữ liệu trực tiếp, và nhận cảnh
-                        báo về các thiết bị.
+                        Nền tảng cho phép bạn tổng hợp, trực quan hóa các luồng
+                        dữ liệu từ các thiết bị quan trắc trên Blockchain. Bạn
+                        có thể gửi dữ liệu thới hệ thống từ thiết bị của bạn,
+                        xem dữ liệu trực tiếp, và nhận cảnh báo về các thiết bị.
                       </Typography>
                     </MDBCol>
                     <MDBCol size="6">
@@ -216,9 +217,7 @@ export const LoginForm: React.FC<{}> = () => {
                             <h3 className="white-text">
                               <MDBIcon icon="hdd" /> Lưu trữ dữ liệu
                             </h3>
-                            <MDBCardTitle tag="h5" className="pt-2">
-                              <strong>...</strong>
-                            </MDBCardTitle>
+
                             <div className="text-left">
                               <MDBCardTitle tag="h5" className="pt-2">
                                 <strong>
@@ -226,14 +225,9 @@ export const LoginForm: React.FC<{}> = () => {
                                 </strong>
                               </MDBCardTitle>
                               <p className="text-left">
-                                Các bộ cảm biến thường hoạt động cục bộ. XXX cho
-                                phép các cảm biến gửi dữ liệu lên và lưu trữ
-                                trong các kênh riêng tư. XXX lưu trữ dữ liệu
-                                trong các kênh riêng tư theo mặc định, người
-                                dùng có thể chia sẽ dữ liệu với những người dùng
-                                khác. Khi dữ liệu nằm trên kênh của XXX, bạn có
-                                thể phân tích và quản lý nó một cách trực quan
-                                nhất.
+                                Nền tảng hổ trợ lưu trữ dữ liệu cảm biến từ các
+                                thiết bị của người dùng vào một mạng Blockchain
+                                riêng tư, đảm bảo tính bất biến và bảo mật.
                               </p>
                               <MDBCardTitle tag="h5" className="pt-2">
                                 <strong>
@@ -241,9 +235,9 @@ export const LoginForm: React.FC<{}> = () => {
                                 </strong>
                               </MDBCardTitle>
                               <p className="text-left">
-                                Người dùng cấu hình, đóng gói dữ liệu từ các cảm
-                                biến của thiết bị. Sau đó gửi lên và lưu trữ vào
-                                các block của hệ thống
+                                Người dùng cấu hình các thiết bị theo yêu cầu
+                                sau đó gửi dữ liệu từ các cảm biến lên hệ thống
+                                đễ lưu trữ và truy vấn.
                               </p>
                               <MDBCardTitle tag="h3" className="pt-2">
                                 <strong>...</strong>
@@ -266,29 +260,24 @@ export const LoginForm: React.FC<{}> = () => {
                         >
                           <div>
                             <h3 className="white-text">
-                              <MDBIcon icon="chart-line" /> Trực quan hóa
+                              <MDBIcon icon="chart-line" /> Trực quan hóa và
+                              chia sẽ
                             </h3>
-                            <MDBCardTitle tag="h5" className="pt-2">
-                              <strong>...</strong>
-                            </MDBCardTitle>
+
                             <div className="text-left">
                               <MDBCardTitle tag="h5" className="pt-2">
                                 <strong>
-                                  Lý do bạn nên sử dụng phân tích và trực quan
-                                  hóa của XXX.
+                                  Hỗ trợ truy xuất dữ liệu dể dàng
                                 </strong>
                               </MDBCardTitle>
                               <span className="text-left">
-                                XXX cung cấp quyền truy vào các công cụ quan sát
-                                giúp bản quản lý dữ liệu. Bạn có thể:
                                 <ul className="m-0">
                                   <li className="text-left p-0 m-0">
                                     Xem trực tiếp sự thay đổi của dữ liệu từ các
-                                    cảm biến.
+                                    cảm biến liên tục theo thời gian thực.
                                   </li>
                                   <li className="text-left p-0 m-0">
-                                    Cấp quyền đọc dữ liệu cho những người dùng
-                                    khác trong hệ thống.
+                                    Tổng hợp dữ liệu theo yêu cầu
                                   </li>
                                   <li className="text-left p-0 m-0">
                                     Phân tích dữ liệu dựa theo ngày/tháng.
@@ -297,15 +286,11 @@ export const LoginForm: React.FC<{}> = () => {
                               </span>
 
                               <MDBCardTitle tag="h5" className="pt-2">
-                                <strong>
-                                  Phân tích và trực quan hóa dữ liệu
-                                </strong>
+                                <strong>Chia sẽ thiết bị</strong>
                               </MDBCardTitle>
                               <p className="text-left">
-                                Lưu trữ dữ liệu trên đám mây giúp bạn dễ dàng
-                                truy cập vào dữ liệu của mình. Sử dụng các công
-                                cụ của hệ thống giúp bạn có thể trực quan hóa dữ
-                                liệu.
+                                Người dùng có thể chia sẽ quyền xem dữ liệu các
+                                cảm biến từ thiết bị đang sở hũu.
                               </p>
                               <MDBCardTitle tag="h3" className="pt-2">
                                 <strong>...</strong>
@@ -330,45 +315,20 @@ export const LoginForm: React.FC<{}> = () => {
                             <h3 className="white-text">
                               <MDBIcon icon="sms" /> Cảnh báo
                             </h3>
-                            <MDBCardTitle tag="h5" className="pt-2">
-                              <strong>...</strong>
-                            </MDBCardTitle>
+
                             <div className="text-left">
                               <MDBCardTitle tag="h5" className="pt-2">
                                 <strong>
-                                  Điều khiến bạn muốn sử dụng XXX để xử lý dữ
-                                  liệu.
+                                  Nhận cảnh về các cảm biến một cách nhanh chống
                                 </strong>
                               </MDBCardTitle>
                               <span className="text-left">
-                                XXX cung cấp quyền truy vào các công cụ quan sát
-                                giúp bản quản lý dữ liệu. Bạn có thể:
-                                <ul className="m-0">
-                                  <li className="text-left p-0 m-0">
-                                    Xem trực tiếp sự thay đổi của dữ liệu từ các
-                                    cảm biến.
-                                  </li>
-                                  <li className="text-left p-0 m-0">
-                                    Cấp quyền đọc dữ liệu cho những người dùng
-                                    khác trong hệ thống.
-                                  </li>
-                                  <li className="text-left p-0 m-0">
-                                    Phân tích dữ liệu dựa theo ngày/tháng.
-                                  </li>
-                                </ul>
+                                Người dùng có thể cấu hình cho phép nhận cảnh
+                                báo về tin nhắn điện thoại khi các thông số cảm
+                                biến vướt mức quy định. Từ dó nhanh chông đưa ra
+                                hướng giải quyết
                               </span>
 
-                              <MDBCardTitle tag="h5" className="pt-2">
-                                <strong>
-                                  Phân tích và trực quan hóa dữ liệu
-                                </strong>
-                              </MDBCardTitle>
-                              <p className="text-left">
-                                Lưu trữ dữ liệu trên đám mây giúp bạn dễ dàng
-                                truy cập vào dữ liệu của mình. Sử dụng các công
-                                cụ của hệ thống giúp bạn có thể trực quan hóa dữ
-                                liệu.
-                              </p>
                               <MDBCardTitle tag="h3" className="pt-2">
                                 <strong>...</strong>
                               </MDBCardTitle>

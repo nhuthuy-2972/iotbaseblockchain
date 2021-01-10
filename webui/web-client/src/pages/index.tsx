@@ -321,7 +321,7 @@ const IndexPage = () => {
             marginBottom: theme.sizing.scale600,
           })}
         >
-          DANH SÁCH THIẾT BỊ ĐANG SỞ HỬU
+          DANH SÁCH THIẾT BỊ ĐANG SỞ HỮU
         </div>
         <Button
           onClick={() => setIsOpen(true)}
@@ -504,7 +504,7 @@ const IndexPage = () => {
           marginTop: theme.sizing.scale1000,
         })}
       >
-        DANH SÁCH THIẾT BỊ ĐƯỢC CHIA SẼ
+        DANH SÁCH THIẾT BỊ ĐƯỢC CHIA SẺ
       </div>
 
       <div
